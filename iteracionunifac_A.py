@@ -2,7 +2,8 @@ import pandas as pd
 import numpy 
 import time
 print("Modelo UNIFAC by Dawffydd Riv")
-
+print("""Este programa estima los coeficientes de actividad para el equilibrio liquido vapor
+de los compuestos capturados  en el archivo BBDDCompuestos """)
 #########################	Entrada de variables  
 
 ####	<<<<<<<<<<<<<<<<<<<Entrada de parámetros para UNIFAC>>>>>>>>>>>>>>>>>>>>>>>>>>>
