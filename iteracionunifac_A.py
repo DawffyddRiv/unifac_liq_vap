@@ -203,31 +203,3 @@ print("La suma de la parte residual y combinatoria es ""\n",e)
 gama=numpy.exp(e)
 print("Los valores del coeficiente de actividad de la mezcla son""\n",gama)
 #### Fin del cálculo del coeficiente de actividad
-
-
-##Iniciando codigo prueba para el equilibrio solido-liquido
-
-#### Producto gama por concentraciones
-C0_1=numpy.reshape(C0,(ielegido,1))
-gamaA=numpy.multiply(C0_1,gama)
-print("Las solubilidades de referencia son""\n",solub_1)
-print("Impresion de la multiplicacion C0*gama""\n",gamaA)
-gaton=numpy.array(gamaA).flatten('F')
-#print("Los valores del producto C0 * gama  son""\n",gaton)
-#print("La forma de la matriz del producto C0*gama >>>  ",gaton.shape)
-	
-
-
-err=((gamaA-solub_1)/solub_1)
-#erro=numpy.absolute(gamaA-solub_1)/solub_1
-print("El error calculado para cada componente es""\n",err)
-#if numpy.all(err<=0.1):
-#	gama_R=1/gama
-#	ener_2=(entalpias/(0.008314472*Tempfusion))*((Tempfusion/Temp)-1)
-#	C0_resultante=numpy.exp(ener_2)
-#	print("Finalmente, la fraccióm mol de los compuestos es""\n",C0_resultante)
-#	break;
-	#time.sleep(3)
-#else:	
-#	C0=C0-0.00005
-	#time.sleep(3)
